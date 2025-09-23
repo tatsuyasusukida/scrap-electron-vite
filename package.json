@@ -1,0 +1,58 @@
+{
+  "name": "scrap-electron-vite",
+  "productName": "scrap-electron-vite",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
+  },
+  "keywords": [],
+  "author": {
+    "name": "Tatsuya Susukida",
+    "email": "susukida@loremipsum.co.jp"
+  },
+  "license": "MIT",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron",
+      "electron-winstaller"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "@electron-forge/cli": "^7.9.0",
+    "@electron-forge/maker-deb": "^7.9.0",
+    "@electron-forge/maker-rpm": "^7.9.0",
+    "@electron-forge/maker-squirrel": "^7.9.0",
+    "@electron-forge/maker-zip": "^7.9.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.9.0",
+    "@electron-forge/plugin-fuses": "^7.9.0",
+    "@electron-forge/plugin-vite": "^7.9.0",
+    "@electron/fuses": "^1.8.0",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "electron": "38.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "typescript": "~4.5.5",
+    "vite": "^5.4.20"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "electron-squirrel-startup": "^1.0.1",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1",
+    "tw-animate-css": "^1.4.0"
+  }
+}
